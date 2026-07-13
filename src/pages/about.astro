@@ -1,0 +1,226 @@
+---
+const title = "Caaligo | About";
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>{title}</title>
+</head>
+
+<body>
+
+  <aside class="sidebar">
+
+    <div class="brand">
+      <img src="/channellogo.jpg" alt="Caaligo Logo" class="channel-logo" />
+      <h1>CAALIGO</h1>
+      <p>
+        Minecraft creator making videos,
+        mods, and more.
+      </p>
+    </div>
+
+    <div class="search">
+      <input type="text" placeholder="Search..." />
+    </div>
+
+    <nav>
+      <h3>Navigation</h3>
+      <a href="/">Home</a>
+      <a href="/content">Videos</a>
+      <a href="/moe">Obsidian Edition</a>
+      <a href="/blog">Blog</a>
+      <a href="/community">Community</a>
+      <a href="/about" class="active">About</a>
+    </nav>
+
+<nav>
+  <h3>Socials</h3>
+  <a href="https://www.youtube.com/@Caaligo/featured" target="_blank">YouTube</a>
+  <a href="https://discord.gg/Hcg6yWWSjn" target="_blank">Discord</a>
+  <a href="https://www.curseforge.com/members/caaligo/projects" target="_blank">CurseForge</a>
+  <a href="https://www.instagram.com/caaligo_?igsh=cHJyMm4wMjV2eThq" target="_blank">Instagram</a>
+  <a href="https://www.tiktok.com/@caaligo?_r=1&_t=ZT-980bISurc8j" target="_blank">TikTok</a>
+  <a href="https://www.youtube.com/@LeoCaaligula" target="_blank">Caaligula</a>
+</nav>
+
+  </aside>
+
+  <main class="main">
+
+    <article class="paper">
+
+      <div class="hero">
+        <p class="label">ABOUT THE CREATOR</p>
+        <h2>Caaligo</h2>
+      </div>
+
+      <hr />
+
+      <section class="about-content">
+        <h3>Vision & History</h3>
+        <p>
+          Caaligo is a creator brand centered on Minecraft, focusing on the intersection of deep-dive storytelling, experimental game modification, and immersive unfiction.
+        </p>
+        <p>
+          From constructing fake forgotten versions of Minecraft to investigating complex ARGs, my work aims to explore the boundaries of gaming history and the narratives that exist within the code. And I get a lot of enjoyment out of what I do, too. Whether through video essays, custom-built modpacks like <em>Obsidian Edition</em>, or original mystery writing, every project is crafted to challenge how we perceive the game we thought we knew and love.
+        </p>
+        
+        <h3>Technical Focus and Experience</h3>
+        <p>
+          My development work heavily utilizes Forge and custom Java Mixins to push Minecraft beyond its standard limits. By bridging the gap between classic aesthetics and modern backend performance, I strive to create projects that feel both nostalgic and technically advanced.
+        </p>
+        <p> Additionally, when it comes to my own creative writing and lore building projects, I try to do the best I can to test the limits of general story-telling. I have prior experience writing complex world-building projects, immersive stories, and ground-breaking, technical narratives.
+        </p>
+        <h3> Business Contact </h3>
+        <p> If you want to contact me directly instead of through channels like Discord for business quiries and potentially collabortive projects, you can contact me at leocaaligo@gmail.com.
+        </p>
+      </section>
+
+    </article>
+
+  </main>
+
+</body>
+</html>
+
+<style>
+:root {
+  --accent: #58c7ff;
+  --paper: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("/space.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  position: fixed;
+  width: 280px;
+  height: 100vh;
+  background: rgba(17,20,38,0.95);
+  padding: 35px;
+  box-sizing: border-box;
+  color: white;
+  overflow-y: auto;
+}
+
+.channel-logo {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 2px solid var(--accent);
+  box-shadow: 0 0 15px rgba(88, 199, 255, 0.2);
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: 42px;
+  letter-spacing: 5px;
+}
+
+.brand p {
+  color: #b8bfd8;
+  line-height: 1.5;
+}
+
+.search input {
+  width: 100%;
+  padding: 10px;
+  margin: 25px 0;
+  box-sizing: border-box;
+  background: #20243b;
+  border: 1px solid #333;
+  color: white;
+}
+
+nav h3 {
+  color: var(--accent);
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+nav a {
+  display: block;
+  color: #cfd5ed;
+  text-decoration: none;
+  padding: 8px 0;
+}
+
+nav a:hover, nav a.active {
+  color: white;
+}
+
+nav a.active {
+  font-weight: bold;
+  border-left: 2px solid var(--accent);
+  padding-left: 10px;
+  margin-left: -12px;
+}
+
+/* Main Content Area */
+.main {
+  margin-left: 280px;
+  padding: 50px;
+  min-height: 100vh;
+}
+
+.paper {
+  max-width: 850px;
+  margin: auto;
+  background: var(--paper);
+  padding: 55px;
+  box-shadow: 0 20px 60px black;
+}
+
+.hero {
+  text-align: center;
+}
+
+.label {
+  color: #777;
+  letter-spacing: 3px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 40px 0;
+}
+
+.about-content {
+  line-height: 1.8;
+  color: #333;
+}
+
+.about-content h3 {
+  margin-top: 30px;
+}
+
+@media(max-width:900px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .main {
+    margin-left: 0;
+    padding: 20px;
+  }
+  .paper {
+    padding: 30px;
+  }
+}
+</style>
